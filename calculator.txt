@@ -1,0 +1,47 @@
+class calc:
+    def calculator():
+       print("1.Addition")
+       print("2.Subtraction")
+       print("3.Multiplication")
+       print("4.Division")
+       a=input("Enter the Input:")
+
+       if(a=='1'):
+         num1=int(input("Enter the number1:"))
+         num2=int(input("Enter the number2:"))
+         print(num1+num2)
+         calc.re()
+
+       elif(a=='2'):
+         num1 = int(input("Enter the number1:"))
+         num2 = int(input("Enter the number2:"))
+         print(num1 - num2)
+         calc.re()
+
+       elif(a=='3'):
+         num1 = int(input("Enter the number1:"))
+         num2 = int(input("Enter the number2:"))
+         print(num1 * num2)
+         calc.re()
+
+       elif(a=='4'):
+         num1 = int(input("Enter the number1:"))
+         num2 = int(input("Enter the number2:"))
+         print(num1 // num2)
+         calc.re()
+
+       else:
+         print("Invalid Entry")
+
+    def re():
+           ans = input("If you want to do it again then press Y for Yes else N for No:")
+           if (ans == 'y' or ans == 'Y'):
+               obj.calculator()
+           elif (ans == 'n' or ans == 'N'):
+               print("Thanks")
+           else:
+               print("Invalid Input")
+
+
+obj=calc
+obj.calculator()
